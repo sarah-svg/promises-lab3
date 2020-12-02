@@ -1,0 +1,19 @@
+// Write a file
+// require const fsPromises = require('fs').promises;
+// use fsPromises.writeFile to write a file
+// then console.log "DONE!"
+
+
+
+
+
+
+
+
+const fs = require('fs').promises;
+
+
+fs.writeFile('./cool-finish.txt', 'DONE!')
+
+.then(() => console.log('DONE'))
+.catch(err => console.log(err));
