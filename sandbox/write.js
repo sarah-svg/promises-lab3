@@ -17,3 +17,14 @@ fs.writeFile('./cool-finish.txt', 'DONE!')
 
 .then(() => console.log('DONE'))
 .catch(err => console.log(err));
+
+
+async function writeAsync() {
+    try{
+        const res = await fs.writeFile('./cool-finish2.txt', 'DONE!');
+        console.log('done');
+    } catch(err) {
+        console.log(err);
+    }
+}
+writeAsync();

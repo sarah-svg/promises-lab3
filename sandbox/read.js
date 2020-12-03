@@ -15,4 +15,14 @@ fs.readFile('./sandbox/README.md', 'utf-8') ////utf-8 to read the file not in he
     });
 
 
+    async function readAsync() {
+        try{
+            const res = await fs.readFile('./sandbox/README.md', 'utf-8');
+            console.log(res);
+        } catch(err) {
+            console.log(err);
+        }
+    }
+readAsync();
+
 
