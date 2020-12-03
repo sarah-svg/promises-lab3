@@ -1,6 +1,9 @@
 const fs = require('fs').promises
 const { manyCharacters } = require('./manyCharacter.js');
 
+
+
+
 describe('manyCharacters function', () => {
 
     it('returns a list of characters', async () => {
