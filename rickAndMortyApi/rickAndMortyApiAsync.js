@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 const url = "https://rickandmortyapi.com/api/character/";
-
+////get character
 const rickAndMortyApiAsync = async (id) => {
   try {
     const url = `https://rickandmortyapi.com/api/character/${id}`;

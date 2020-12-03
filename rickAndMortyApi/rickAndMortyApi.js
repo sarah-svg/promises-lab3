@@ -5,7 +5,7 @@
 
 const url = "https://rickandmortyapi.com/api/character/";
 
-
+////get character
 
 
 const fetch = require('node-fetch');
