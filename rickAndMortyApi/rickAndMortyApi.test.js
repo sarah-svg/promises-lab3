@@ -1,8 +1,8 @@
-const { fetchRickAndMorty } = require("./rickAndMortyApi");
+const { fetchRickAndMorty } = require('./rickAndMortyApi');
 
-describe("rickAndMorty returns on character", () => {
-  it("takes an id and returns a promise that resolves to a character's name, status and species", async () => {
+describe('rickAndMorty returns on character', () => {
+  it('takes an id and returns a promise that resolves to a character\'s name, status and species', async() => {
     const actual = await fetchRickAndMorty(1);
-    expect(actual).toEqual("Name: Rick Sanchez, Status: Alive, Species: Human");
+    expect(actual).toEqual('Name: Rick Sanchez, Status: Alive, Species: Human');
   });
 });
